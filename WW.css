@@ -26,9 +26,21 @@ h3{font-family: Arial, Helvetica, sans-serif;
 
 }
 .border {
-     padding: 1%;
-     border: 5px solid rgb(234, 132, 23);
+     
+     border: 10px solid rgb(255, 255, 255);
+     
 }
+
+.border:hover{
+    animation-name: example;
+    animation-duration: 2s;
+
+}
+
+@keyframes example {
+    from {border: 10px solid rgb(255, 255, 255);}
+    to {border: 10px solid rgb(255, 0, 0);}
+  }
 
 h1{ width: 500px;
     height: 100px;
@@ -87,5 +99,31 @@ td{
     height: 50px;
     background-color: rgb(255, 50, 50);
     color: rgb(255, 255, 255);
+}
+
+section{
+
+    padding: 3%;
     
 }
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+div{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    padding: 100px;
+
+  }
